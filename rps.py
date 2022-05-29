@@ -64,4 +64,13 @@ def play_with_camera():
             print(f"{winner} wins.")
     print(f"{winner} won three rounds first!")
 
-play_with_camera()
+play = True
+
+while play:
+    play_with_camera()
+    play_again = input("\nType 'continue' to carry on playing, or press the enter key to quit.\n")
+    if play_again.lower() == "continue":
+        continue
+    else:
+        print("\nThanks for playing!")
+        play = False
