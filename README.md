@@ -13,3 +13,7 @@ A new conda environment was created with the opencv-python, tensorflow and ipyke
 ## Milestone 3 - Create a Rock-Paper-Scissors game
 
 manual_rps.py includes a scripting rock-paper-scissors game. It consists of the functions get_computer_choice, which randomly generates one of the optons, and get_user_choice, which asks for the user's input for one of the options. The get_winner function takes both choices and determines the winner using if-elif-else statements. The file uses the play function to run the game.
+
+## Milestone 4 - Use the Camera to play Rock-Paper-Scissors
+
+using the code in model.ipynb, a new file called camera_rps.py was created which contains the code and a function, get_prediction, for the camera input of rock-paper-scissors. rps.py is the file that contains the rock-paper-scissors game with the computer using a camera. It uses the get_prediction function, as well as get_computer_choice for the user and computer inputs. The get_winner function determines a winner and play_with_camera function allows for multiple rounds until either the user or computer has won 3 times.
