@@ -47,7 +47,13 @@ def play_with_camera():
     user_wins = 0
     while computer_wins < 3 and user_wins < 3:
         input("Get ready for the round! (press enter)")
+
         user_choice = get_prediction()
+        if user_choice == "Nothing":
+            cont = input("\nAre you still playing? (y/n)\n")
+            if cont.lower() != "y":
+                break
+
         computer_choice = get_computer_choice()
 
         print(f"\nComputer picks: {computer_choice}")
@@ -62,15 +68,21 @@ def play_with_camera():
             else:
                 user_wins += 1
             print(f"{winner} wins.")
-    print(f"{winner} won three rounds first!")
+    if computer_wins == 3 or user_wins == 3:
+        print(f"{winner} won three rounds first!")
 
 play = True
 
 while play:
     play_with_camera()
-    play_again = input("\nType 'continue' to carry on playing, or press the enter key to quit.\n")
+    play_again = input("\nType 'continue' to play agin, or press the enter key to quit.\n")
     if play_again.lower() == "continue":
         continue
     else:
         print("\nThanks for playing!")
         play = False
+
+# After the loop release the cap object
+cap.release()
+# Destroy all the windows
+cv2.destroyAllWindows()

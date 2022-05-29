@@ -28,10 +28,7 @@ def get_prediction():
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     return users_rps
-
-user_choice = get_prediction()
-print(user_choice)
-            
+           
 # After the loop release the cap object
 cap.release()
 # Destroy all the windows
