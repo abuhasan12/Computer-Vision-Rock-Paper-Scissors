@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Computer-Vision-Rock-Paper-Scissors
 
 The Computer Vision Rock Paper Scissors project is to simulate a rock-paper-scissors game with your computer. It uses a TensorFlow model to identify if you are holding up 'rock', 'paper', 'scissors' or 'nothing' to your camera.
