@@ -18,6 +18,3 @@ manual_rps.py includes a scripting rock-paper-scissors game. It consists of the 
 ## Milestone 4 - Use the Camera to play Rock-Paper-Scissors
 
 using the code in model.ipynb, a new file called camera_rps.py was created which contains the code and a function, get_prediction, for the camera input of rock-paper-scissors. rps.py is the file that contains the rock-paper-scissors game with the computer using a camera. It uses the get_prediction function, as well as get_computer_choice for the user and computer inputs. The get_winner function determines a winner and play_with_camera function allows for multiple rounds until either the user or computer has won 3 times.
-=======
-# Computer-Vision-Rock-Paper-Scissors
->>>>>>> f38c313497f94949e8c7a03ccef1a4b53b65c6d1
